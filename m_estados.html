@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador Multipago</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="vh-100 sticky-top">
+        <div class="sidebar-header p-2">
+          <h3>
+            <img class="img-fluid" src="./img/logo_m-oferta.svg" alt="" />
+          </h3>
+          <strong>VM</strong>
+        </div>
+
+        <ul class="list-unstyled pt-5">
+          <li>
+            <a href="/" class="text-light">
+              <i class="material-icons mr-2">home</i>
+              <span class="text">Principal</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="movimientos.html" class="text-light">
+              <i class="material-icons mr-2">insert_chart</i>
+              <span class="text">Movimientos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Reportes"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle text-light"
+            >
+              <i class="material-icons mr-2">filter_none</i>
+              <span class="text">Reportes</span>
+            </a>
+            <ul class="collapse list-unstyled" id="Reportes">
+              <li>
+                <a href="m_vale.html" class="text-light">Resumen de ventas por vales</a>
+              </li>
+              <li>
+                <a href="m_estados.html" class="text-light"
+                  >Movimiento de vales por estado</a
+                >
+              </li>
+              <li>
+                <a href="m_pagos.html" class="text-light"
+                  >Movimiento de vales por canales de pago</a
+                >
+              </li>
+              <li>
+                <a href="ventas.html" class="text-light">Ventas realizadas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="validador.html" class="text-light">
+              <i class="material-icons mr-2">center_focus_weak</i>
+              <span class="text">Validador</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div class="container-fluid p-0 content__data" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
+          <div class="container-fluid p-0">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+              <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center">
+                <i class="material-icons text-light">menu</i>
+              </button>
+              <h3 class="text-light text-uppercase pl-3 m-0 py-1" style="font-size: 1.2rem;">Nombre de la empresa</h3>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+              <div class="user d-inline-block">
+               <div class="row">
+                <i class="material-icons notifications_none">notifications_none</i>
+                <a href="#" class="d-flex align-items-center">
+                  <span class="px-3">Nombre de usuario</span>
+                <i class="material-icons">person_outline</i>
+                </a>
+               </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid mt-5 h-50">
+          <div class="col-lg-12">
+            <h2 class="font-weight-bold">Movimientos de vale por estado</h2>
+            <div class="card shadow-sm mt-4">
+              <div class="card-body">
+                <div class="col-12">
+                    <div class="row">
+                        <form action="" class="form-inline col-5">
+                            <label class="col-5 p-0" for="monto">Consultar hasta la fecha</label>
+                            <div class="col-7 input-group">
+                                <input type="date" class="form-control" placeholder="">
+                                    <div class="input-group-append">
+                                    <button class="btn" type="button">
+                                    <i class="material-icons" aria-hidden="true">date_range</i>
+                                    </button>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 py-5">
+                        <h3>Datos Encontrados</h3>
+
+                        <div class="row pt-3">
+                            <div class="col-4">
+                                <p class="row">
+                                    <strong class="col-6">Total usados: </strong>
+                                    <span class="col-6 text-right">22</span></p>
+                                    <p class="row">
+                                        <strong class="col-6">Total no usados: </strong>
+                                        <span class="col-6 text-right">22</span></p>
+                            </div>
+                            <div class="col-4">
+                                <p class="row">
+                                    <strong class="col-6">Total Expirados: </strong>
+                                    <span class="col-6 text-right">22</span></p>
+                                    <p class="row">
+                                        <strong class="col-6">Total anulados: </strong>
+                                        <span class="col-6 text-right">22</span></p>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end align-items-center">
+                                <a href="#"><i class="material-icons">picture_as_pdf</i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <div class="card tabla__resultados">
+                        <div class="table-responsivr">
+                            <table class="table">
+                            <thead>
+                            <tr class="table--titulos">
+                                <th scope="col">#</th>
+                                <th scope="col">Monto del vale</th>
+                                <th scope="col">Usados</th>
+                                <th scope="col">No usados</th>
+                                <th scope="col">Anulados</th>
+                                <th scope="col">Expirados</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>                            <tr>
+                                <th scope="row">1</th>
+                                <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>                            <tr>
+                                <th scope="row">1</th>
+                                <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+                            <tr class="table--titulos" style="font-size: 1rem !important; font-weight: bold;">
+                                <th scope="row" colspan="2">TOTALES</th>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>7</td>
+                                <td>0</td>
+                            </tr>
+
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

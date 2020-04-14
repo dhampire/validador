@@ -1,0 +1,92 @@
+:root{
+    --lightblue: #138FF1;
+    --blue: #174A84;
+    --darkblue: #001E4B; 
+    --black: #2D323E;
+    --lightgray: #F1F3F9;
+}
+@import "colors";
+@import "sidebar";
+body{
+    color: #73849E;
+}
+.login{
+    background-image: url(../img/fondo_login.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.top__header{
+    background: linear-gradient(to right, var(--darkblue), var(--blue));
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .user{
+        i {
+            background: var(--lightblue);
+            text-align: center;
+            padding: 3px 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+        .notifications_none{
+            background: none;
+            color: white;
+        }
+    }
+}
+
+.content__data{
+    background-color: var(--lightgray);
+    & h1, & h2, & h3{
+        color: var(--blue);
+    }
+}
+
+.tabla__resultados {
+    border: 1px solid #D3DDEA !important;
+    font-size: smaller;
+    .table--titulos{
+        font-size: x-small;
+        color: var(--blue);
+    }
+}
+label {
+    color: var(--blue) !important;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: ''; }
+    .has-search .form-control {
+        padding-right: 2.375rem;
+    }
+    
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+        right: 15px;
+    }
+
+    .form-inline label{
+        justify-content: start !important;
+    }

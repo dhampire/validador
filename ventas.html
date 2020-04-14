@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validador Multipago</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="vh-100 sticky-top">
+        <div class="sidebar-header p-2">
+          <h3>
+            <img class="img-fluid" src="./img/logo_m-oferta.svg" alt="" />
+          </h3>
+          <strong>VM</strong>
+        </div>
+
+        <ul class="list-unstyled pt-5">
+          <li>
+            <a href="/" class="text-light">
+              <i class="material-icons mr-2">home</i>
+              <span class="text">Principal</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="movimientos.html" class="text-light">
+              <i class="material-icons mr-2">insert_chart</i>
+              <span class="text">Movimientos</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#Reportes"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle text-light"
+            >
+              <i class="material-icons mr-2">filter_none</i>
+              <span class="text">Reportes</span>
+            </a>
+            <ul class="collapse list-unstyled" id="Reportes">
+              <li>
+                <a href="m_vale.html" class="text-light">Resumen de ventas por vales</a>
+              </li>
+              <li>
+                <a href="m_estados.html" class="text-light"
+                  >Movimiento de vales por estado</a
+                >
+              </li>
+              <li>
+                <a href="m_pagos.html" class="text-light"
+                  >Movimiento de vales por canales de pago</a
+                >
+              </li>
+              <li>
+                <a href="ventas.html" class="text-light">Ventas realizadas</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="validador.html" class="text-light">
+              <i class="material-icons mr-2">center_focus_weak</i>
+              <span class="text">Validador</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div class="container-fluid p-0 content__data" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
+          <div class="container-fluid p-0">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+              <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center">
+                <i class="material-icons text-light">menu</i>
+              </button>
+              <h3 class="text-light text-uppercase pl-3 m-0 py-1" style="font-size: 1.2rem;">Nombre de la empresa</h3>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+              <div class="user d-inline-block">
+               <div class="row">
+                <i class="material-icons notifications_none">notifications_none</i>
+                <a href="#" class="d-flex align-items-center">
+                  <span class="px-3">Nombre de usuario</span>
+                <i class="material-icons">person_outline</i>
+                </a>
+               </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid mt-5">
+          <div class="col-lg-12">
+            <h2 class="font-weight-bold">Ventas realizadas</h2>
+            <div class="card shadow-sm mt-3">
+              <div class="card-body">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4">
+                            <form action="" class="form-inline">
+                                <label class="col-5 p-0" for="monto">Monto del vale </label>
+                                <select class="custom-select col-7" id="monto">
+                                <option selected>Todos...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                </select>
+                            </form>
+                        </div>
+                    
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="col-6">
+                                    <form action="" class="form-inline">
+                                        <label class="col-5 p-0" for="monto">Canal de pagos</label>
+                                        <select class="custom-select col-7" id="monto">
+                                        <option selected>Todos...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="col-6">
+                                    <form action="" class="form-inline">
+                                        <label class="col-5 p-0" for="monto">Estado del pago</label>
+                                        <select class="custom-select col-7" id="monto">
+                                        <option selected>Todos...</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-4">
+                        <div class="col-4">
+                          <div class="row">
+                            <form action="" class="form-inline col-12">
+                                <label class="col-2 p-0" for="monto">Desde: </label>
+                                <div class="col-10 input-group">
+                                    <input type="date" class="form-control" placeholder="">
+                                        <div class="input-group-append">
+                                        <button class="btn" type="button">
+                                        <i class="material-icons" aria-hidden="true">date_range</i>
+                                        </button>
+                                     </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="row">
+                            <form action="" class="form-inline col-12">
+                                <label class="col-2 p-0" for="monto">Hasta</label>
+                                <div class="col-10 input-group">
+                                    <input type="date" class="form-control" placeholder="">
+                                        <div class="input-group-append">
+                                        <button class="btn" type="button">
+                                        <i class="material-icons" aria-hidden="true">date_range</i>
+                                        </button>
+                                     </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-5">
+                      <h3>Datos Encontrados</h3>
+
+                      <div class="row pt-3">
+                          <div class="col-4">
+                              <p class="row">
+                                  <strong class="col-6">Cantidad total de vales: </strong>
+                                  <span class="col-6 text-right">22</span>
+                              </p>
+                              <p class="row">
+                                <strong class="col-6">Monto total Bs.: </strong>
+                                <span class="col-6 text-right">3500</span>
+                            </p>
+                      
+                          </div>
+                          <div class="col-8 d-flex justify-content-end align-items-center">
+                              <a href="#"><i class="material-icons">picture_as_pdf</i></a>
+                          </div>
+                      </div>
+                  </div>
+                    <!-- table -->
+                    <div class="card tabla__resultados">
+                        <div class="table-responsivr">
+                            <table class="table">
+                            <thead>
+                            <tr class="table--titulos">
+                                <th scope="col">#</th>
+                                <th scope="col">Nro Orden</th>
+                                <th scope="col">Nombre del Cliente</th>
+                                <th scope="col">CI</th>
+                                <th scope="col">Nro Celular</th>
+                                <th scope="col">Correo electrónico</th>
+                                <th scope="col">Monto (Bs)</th>
+                                <th scope="col">Nro Transaccion</th>
+                                <th scope="col">Fecha del pago</th>
+                                <th scope="col">Canal de pago</th>
+                                <th scope="col">Estado del pago</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345678</td>
+                                <td>Joe Doe</td>
+                                <td>1234567 SC</td>
+                                <td>77811111</td>
+                                <td>joe2020@gmail.com</td>
+                                <td>2500</td>
+                                <td>1900200</td>
+                                <td>17/17/2020</td>
+                                <td>Banca</td>
+                                <td>Confirmado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345678</td>
+                                <td>Joe Doe</td>
+                                <td>1234567 SC</td>
+                                <td>77811111</td>
+                                <td>joe2020@gmail.com</td>
+                                <td>2500</td>
+                                <td>1900200</td>
+                                <td>17/17/2020</td>
+                                <td>Tarjeta de Debito / Credito</td>
+                                <td>Confirmado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345678</td>
+                                <td>Joe Doe</td>
+                                <td>1234567 SC</td>
+                                <td>77811111</td>
+                                <td>joe2020@gmail.com</td>
+                                <td>2500</td>
+                                <td>1900200</td>
+                                <td>17/17/2020</td>
+                                <td>Tigo Money</td>
+                                <td>Confirmado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345678</td>
+                                <td>Joe Doe</td>
+                                <td>1234567 SC</td>
+                                <td>77811111</td>
+                                <td>joe2020@gmail.com</td>
+                                <td>2500</td>
+                                <td>1900200</td>
+                                <td>17/17/2020</td>
+                                <td>Banca</td>
+                                <td>Confirmado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345678</td>
+                                <td>Joe Doe</td>
+                                <td>1234567 SC</td>
+                                <td>77811111</td>
+                                <td>joe2020@gmail.com</td>
+                                <td>2500</td>
+                                <td>1900200</td>
+                                <td>17/17/2020</td>
+                                <td>Banca</td>
+                                <td>Confirmado</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345678</td>
+                                <td>Joe Doe</td>
+                                <td>1234567 SC</td>
+                                <td>77811111</td>
+                                <td>joe2020@gmail.com</td>
+                                <td>2500</td>
+                                <td>1900200</td>
+                                <td>17/17/2020</td>
+                                <td>Banca</td>
+                                <td>Confirmado</td>
+                            </tr>
+
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
