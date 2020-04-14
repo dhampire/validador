@@ -33,7 +33,7 @@ body{
         i {
             background: var(--lightblue);
             text-align: center;
-            padding: 3px 0;
+            padding: 8px 0;
             width: 32px;
             height: 32px;
             border-radius: 50%;
@@ -56,7 +56,7 @@ body{
     border: 1px solid #D3DDEA !important;
     font-size: smaller;
     .table--titulos{
-        font-size: x-small;
+        font-size: smaller;
         color: var(--blue);
     }
 }
@@ -90,3 +90,7 @@ select {
     .form-inline label{
         justify-content: start !important;
     }
+
+.label__date{
+    color: var(--blue);
+}

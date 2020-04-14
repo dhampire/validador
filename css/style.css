@@ -48,9 +48,14 @@
   #sidebar ul li a {
     text-align: left;
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 1rem;
     display: block;
     text-decoration: none; }
+    #sidebar ul li a i {
+      font-size: 20px;
+      width: 32px;
+      height: 32px;
+      text-align: center; }
     #sidebar ul li a:hover {
       color: white;
       background: var(--blue); }
@@ -63,9 +68,7 @@
   #sidebar ul li.active i {
     background: var(--lightblue);
     text-align: center;
-    padding: 3px 0;
-    width: 32px;
-    height: 32px;
+    padding: 5px 0;
     border-radius: 50%; }
   #sidebar a[data-toggle="collapse"] {
     position: relative; }
@@ -78,7 +81,7 @@
   #sidebar ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: var(--darkblue); }
+    background: #252A31; }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -139,7 +142,7 @@ body {
   .top__header .user i {
     background: var(--lightblue);
     text-align: center;
-    padding: 3px 0;
+    padding: 8px 0;
     width: 32px;
     height: 32px;
     border-radius: 50%; }
@@ -156,7 +159,7 @@ body {
   border: 1px solid #D3DDEA !important;
   font-size: smaller; }
   .tabla__resultados .table--titulos {
-    font-size: x-small;
+    font-size: smaller;
     color: var(--blue); }
 
 label {
@@ -186,3 +189,6 @@ select {
 
 .form-inline label {
   justify-content: start !important; }
+
+.label__date {
+  color: var(--blue); }

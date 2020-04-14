@@ -4,7 +4,6 @@ const browserSync = require('browser-sync').create();
 
 style = () =>{
     return gulp.src([
-        'node_modules/materialize-css/sass/materialize.scss', 
         'scss/style.scss'
         ])
     .pipe(sass())     
@@ -12,9 +11,9 @@ style = () =>{
     .pipe(browserSync.stream());
 };
 
+
 js = () => {
     return gulp.src([
-        'node_modules/materialize-css/dist/js/materialize.min.js',
         'node_modules/jquery/dist/jquery.min.js'
         ])
     .pipe(gulp.dest('./js'))

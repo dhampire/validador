@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validador Multipago</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fonts/font-awesome/css/all.min.css">
   </head>
   <body>
     <div class="wrapper">
@@ -25,13 +23,13 @@
         <ul class="list-unstyled pt-5">
           <li>
             <a href="/" class="text-light">
-              <i class="material-icons mr-2">home</i>
+              <i class="fas fa-home mr-3"></i>
               <span class="text">Principal</span>
             </a>
           </li>
           <li class="active">
             <a href="movimientos.html" class="text-light">
-              <i class="material-icons mr-2">insert_chart</i>
+              <i class="fas fa-chart-line mr-3"></i>
               <span class="text">Movimientos</span>
             </a>
           </li>
@@ -42,7 +40,7 @@
               aria-expanded="false"
               class="dropdown-toggle text-light"
             >
-              <i class="material-icons mr-2">filter_none</i>
+            <i class="fas fa-clipboard mr-3"></i>
               <span class="text">Reportes</span>
             </a>
             <ul class="collapse list-unstyled" id="Reportes">
@@ -66,7 +64,7 @@
           </li>
           <li>
             <a href="validador.html" class="text-light">
-              <i class="material-icons mr-2">center_focus_weak</i>
+              <i class="fas fa-qrcode mr-3"></i>
               <span class="text">Validador</span>
             </a>
           </li>
@@ -78,41 +76,36 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
           <div class="container-fluid p-0">
             <div class="col-6 d-flex justify-content-start align-items-center">
-              <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center">
-                <i class="material-icons text-light">menu</i>
+              <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center pl-0">
+                <i class="fas fa-bars text-light"></i>
               </button>
-              <h3 class="text-light text-uppercase pl-3 m-0 py-1" style="font-size: 1.2rem;">Nombre de la empresa</h3>
+              <h3 class="text-light text-uppercase pl-3 m-0 py-1" style="font-size: 1rem;">Nombre de la empresa</h3>
             </div>
             <div class="col-6 d-flex justify-content-end align-items-center">
               <div class="user d-inline-block">
                <div class="row">
-                <i class="material-icons notifications_none">notifications_none</i>
-                <a href="#" class="d-flex align-items-center">
-                  <span class="px-3">Nombre de usuario</span>
-                <i class="material-icons">person_outline</i>
+                <i class="far fa-bell notifications_none"></i>
+                <a href="login.html" class="d-flex align-items-center">
+                  <span class="px-3" style="font-size: 0.85rem;">Nombre de usuario</span>
+                  <i class="far fa-user"></i>
                 </a>
                </div>
               </div>
             </div>
           </div>
         </nav>
-        <div class="container-fluid mt-5 h-50">
+        <div class="container-fluid mt-3">
           <div class="col-lg-12">
-            <h2 class="font-weight-bold">Resumen de ventas por vale</h2>
+            <h2 class="font-weight-bold">Resumen de ventas por vales</h2>
             <div class="card shadow-sm mt-4">
               <div class="card-body">
                 <div class="col-12">
                     <div class="row">
                         <form action="" class="form-inline col-5">
-                            <label class="col-5 p-0" for="monto">Consultar hasta la fecha</label>
-                            <div class="col-7 input-group">
-                                <input type="date" class="form-control" placeholder="">
-                                    <div class="input-group-append">
-                                    <button class="btn" type="button">
-                                    <i class="material-icons" aria-hidden="true">date_range</i>
-                                    </button>
-                                 </div>
-                            </div>
+                            <span class="label__date pr-2">Monto del vale:</span>
+                            <input class="form-control" type="date" id="monto" name="monto" />
+	                          <label for="monto" class="pl-2"><span class="fa fa-calendar-alt"></span></label>
+                          </div>
                         </form>
                     </div>
                     
