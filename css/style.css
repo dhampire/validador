@@ -200,4 +200,18 @@ select {
   font-size: 1.25rem; }
 
 .p_data {
-  font-size: 0.85rem; }
+  font-size: 0.85rem;
+  color: var(--blue);
+  line-height: 1; }
+
+.card--contenedor {
+  padding: 40px 20px !important; }
+
+.validador--movil {
+  display: none; }
+
+@media (max-width: 768px) {
+  .validador--movil {
+    display: block; }
+  .validador--pc {
+    display: none; } }

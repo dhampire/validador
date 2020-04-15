@@ -103,4 +103,25 @@ select {
 }
 .p_data{
     font-size: 0.85rem;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.card--contenedor{
+    padding: 40px 20px !important;
+}
+
+.validador{
+    &--movil{
+        display: none;
+    }
+    
+    @media (max-width: 768px) {
+        &--movil{
+            display: block;
+        }
+        &--pc{
+            display: none;
+        }
+    }
 }
