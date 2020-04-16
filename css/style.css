@@ -215,3 +215,6 @@ select {
     display: block; }
   .validador--pc {
     display: none; } }
+
+table tbody {
+  color: #73849E; }
