@@ -122,7 +122,8 @@
     display: none; } }
 
 body {
-  color: #73849E; }
+  color: #73849E;
+  font-size: 16px; }
 
 .login {
   background-image: url(../img/fondo_login.jpg);
@@ -156,8 +157,12 @@ body {
     color: var(--blue); }
 
 .tabla__resultados {
-  border: 1px solid #D3DDEA !important;
-  font-size: smaller; }
+  border-top: none;
+  border-left: 1px solid #D3DDEA !important;
+  border-right: 1px solid #D3DDEA !important;
+  border-bottom: 1px solid #D3DDEA !important;
+  font-size: smaller;
+  margin-top: 10px; }
   .tabla__resultados .table--titulos {
     font-size: smaller;
     color: var(--blue); }
@@ -206,6 +211,12 @@ select {
 
 .card--contenedor {
   padding: 40px 20px !important; }
+  .card--contenedor form {
+    font-size: 0.85rem; }
+
+.custom-select, .form-control {
+  font-size: 0.85rem;
+  color: #73849E; }
 
 .validador--movil {
   display: none; }
@@ -218,3 +229,9 @@ select {
 
 table tbody {
   color: #73849E; }
+
+.table thead th {
+  vertical-align: middle; }
+
+.table {
+  margin: 0; }

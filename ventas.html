@@ -143,7 +143,7 @@
                     <div class="row mt-3 mb-4">
                         <div class="col-4">
                           <div class="row">
-                            <div class="col-5" style="color: var(--blue);">Fecha desde:</div>
+                            <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Fecha desde:</p></div>
                               <div class="col-7 pl-0 d-flex align-items-center">
                                <input class="form-control" type="date" id="desdeFecha" name="desdeFecha" />
                                 <label for="desdeFecha" class="pl-2">
@@ -155,7 +155,7 @@
 
                         <div class="col-4">
                           <div class="row">
-                            <div class="col-5" style="color: var(--blue);">Fecha desde:</div>
+                            <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Fecha desde:</p></div>
                               <div class="col-7 pl-0 d-flex align-items-center">
                                <input class="form-control" type="date" id="hastaFecha" name="hastaFecha" />
                                 <label for="hastaFecha" class="pl-2">
@@ -166,130 +166,131 @@
                         </div>
 
                     </div>
-                    <div class="col-12 py-5">
-                      <h3 class="data_encontrada">Datos Encontrados</h3>
 
-                      <div class="row pt-3">
-                          <div class="col-4">
-                              <p class="row p_data">
-                                  <span class="col-8">Cantidad total de vales: </span>
-                                  <span class="col-4 text-right">22</span>
-                              </p>
-                              <p class="row p_data">
-                                <span class="col-8">Monto total Bs.: </span>
-                                <span class="col-4 text-right">3,500.00</span>
-                            </p>
-                      
-                          </div>
-                          <div class="col-8 d-flex justify-content-end align-items-center">
-                            <a href="#" class="btn btn-success">DESCARGAR <i class="fas fa-file-excel"></i></a>
-                          </div>
+
+                </div>
+                <div class="col-12 py-3">
+                  <h3 class="data_encontrada">Datos Encontrados</h3>
+
+                  <div class="row pt-3">
+                      <div class="col-4">
+                          <p class="row p_data">
+                              <span class="col-8">Cantidad total de vales: </span>
+                              <span class="col-4 text-right">22</span>
+                          </p>
+                          <p class="row p_data">
+                            <span class="col-8">Monto total Bs.: </span>
+                            <span class="col-4 text-right">3,500.00</span>
+                        </p>
+                      </div>
+                      <div class="col-8 d-flex justify-content-end align-items-center">
+                        <a href="#" class="btn btn-success">Descarga <i class="fas fa-file-excel"></i></a>
                       </div>
                   </div>
-                    <!-- table -->
-                    <div class="card tabla__resultados">
-                        <div class="table-responsivr">
-                            <table class="table">
-                            <thead>
-                            <tr class="table--titulos">
-                                <th scope="col">Nros</th>
-                                <th scope="col">Nro Orden</th>
-                                <th scope="col">Nombre del Cliente</th>
-                                <th scope="col">CI</th>
-                                <th scope="col">Nro Celular</th>
-                                <th scope="col">Correo electrónico</th>
-                                <th scope="col">Monto (Bs)</th>
-                                <th scope="col">Nro Transaccion</th>
-                                <th scope="col">Fecha del pago</th>
-                                <th scope="col">Canal de pago</th>
-                                <th scope="col">Estado del pago</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12345678</td>
-                                <td>Joe Doe</td>
-                                <td>1234567 SC</td>
-                                <td>77811111</td>
-                                <td>joe2020@gmail.com</td>
-                                <td>2,500.00</td>
-                                <td>1900200</td>
-                                <td>17/17/2020</td>
-                                <td>Banca</td>
-                                <td>Confirmado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12345678</td>
-                                <td>Joe Doe</td>
-                                <td>1234567 SC</td>
-                                <td>77811111</td>
-                                <td>joe2020@gmail.com</td>
-                                <td>2,500.00</td>
-                                <td>1900200</td>
-                                <td>17/17/2020</td>
-                                <td>Tarjeta de Debito / Credito</td>
-                                <td>Confirmado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12345678</td>
-                                <td>Joe Doe</td>
-                                <td>1234567 SC</td>
-                                <td>77811111</td>
-                                <td>joe2020@gmail.com</td>
-                                <td>2,500.00</td>
-                                <td>1900200</td>
-                                <td>17/17/2020</td>
-                                <td>Tigo Money</td>
-                                <td>Confirmado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12345678</td>
-                                <td>Joe Doe</td>
-                                <td>1234567 SC</td>
-                                <td>77811111</td>
-                                <td>joe2020@gmail.com</td>
-                                <td>2,500.00</td>
-                                <td>1900200</td>
-                                <td>17/17/2020</td>
-                                <td>Banca</td>
-                                <td>Confirmado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12345678</td>
-                                <td>Joe Doe</td>
-                                <td>1234567 SC</td>
-                                <td>77811111</td>
-                                <td>joe2020@gmail.com</td>
-                                <td>2,500.00</td>
-                                <td>1900200</td>
-                                <td>17/17/2020</td>
-                                <td>Banca</td>
-                                <td>Confirmado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>12345678</td>
-                                <td>Joe Doe</td>
-                                <td>1234567 SC</td>
-                                <td>77811111</td>
-                                <td>joe2020@gmail.com</td>
-                                <td>2,500.00</td>
-                                <td>1900200</td>
-                                <td>17/17/2020</td>
-                                <td>Banca</td>
-                                <td>Confirmado</td>
-                            </tr>
+                  <div class="card tabla__resultados">
+                    <div class="table-responsivr">
+                        <table class="table">
+                        <thead>
+                        <tr class="table--titulos">
+                            <th scope="col">Nros</th>
+                            <th scope="col">Nro Orden</th>
+                            <th scope="col">Nombre del Cliente</th>
+                            <th scope="col">CI</th>
+                            <th scope="col">Nro Celular</th>
+                            <th scope="col">Correo electrónico</th>
+                            <th scope="col">Monto (Bs)</th>
+                            <th scope="col">Nro Transaccion</th>
+                            <th scope="col">Fecha del pago</th>
+                            <th scope="col">Canal de pago</th>
+                            <th scope="col">Estado del pago</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12345678</td>
+                            <td>Joe Doe</td>
+                            <td>1234567 SC</td>
+                            <td>77811111</td>
+                            <td>joe2020@gmail.com</td>
+                            <td>2,500.00</td>
+                            <td>1900200</td>
+                            <td>17/17/2020</td>
+                            <td>Banca</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12345678</td>
+                            <td>Joe Doe</td>
+                            <td>1234567 SC</td>
+                            <td>77811111</td>
+                            <td>joe2020@gmail.com</td>
+                            <td>2,500.00</td>
+                            <td>1900200</td>
+                            <td>17/17/2020</td>
+                            <td>Tarjeta de Debito / Credito</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12345678</td>
+                            <td>Joe Doe</td>
+                            <td>1234567 SC</td>
+                            <td>77811111</td>
+                            <td>joe2020@gmail.com</td>
+                            <td>2,500.00</td>
+                            <td>1900200</td>
+                            <td>17/17/2020</td>
+                            <td>Tigo Money</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12345678</td>
+                            <td>Joe Doe</td>
+                            <td>1234567 SC</td>
+                            <td>77811111</td>
+                            <td>joe2020@gmail.com</td>
+                            <td>2,500.00</td>
+                            <td>1900200</td>
+                            <td>17/17/2020</td>
+                            <td>Banca</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12345678</td>
+                            <td>Joe Doe</td>
+                            <td>1234567 SC</td>
+                            <td>77811111</td>
+                            <td>joe2020@gmail.com</td>
+                            <td>2,500.00</td>
+                            <td>1900200</td>
+                            <td>17/17/2020</td>
+                            <td>Banca</td>
+                            <td>Confirmado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>12345678</td>
+                            <td>Joe Doe</td>
+                            <td>1234567 SC</td>
+                            <td>77811111</td>
+                            <td>joe2020@gmail.com</td>
+                            <td>2,500.00</td>
+                            <td>1900200</td>
+                            <td>17/17/2020</td>
+                            <td>Banca</td>
+                            <td>Confirmado</td>
+                        </tr>
 
-                            </tbody>
-                            </table>
-                        </div>
+                        </tbody>
+                        </table>
                     </div>
+                  </div>
                 </div>
+                <!-- table -->                
               </div>
             </div>
           </div>
