@@ -73,7 +73,7 @@
 
       <!-- Page Content  -->
       <div class="container-fluid p-0 content__data" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top" style="height: 60px;">
           <div class="container-fluid p-0">
             <div class="col-6 d-flex justify-content-start align-items-center">
               <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center pl-0">
@@ -86,8 +86,8 @@
                <div class="row">
                 <i class="far fa-bell notifications_none"></i>
                 <a href="login.html" class="d-flex align-items-center">
-                  <span class="px-3" style="font-size: 0.85rem;">Nombre de usuario</span>
-                  <i class="far fa-user"></i>
+                  <span class="px-3 userName">Nombre de usuario</span>
+                  <i class="fas fa-sign-out-alt"></i>
                 </a>
                </div>
               </div>
@@ -146,9 +146,11 @@
                                 <label class="col-5 p-0" for="monto">Busqueda por: </label>
                                 <select class="custom-select col-7" id="monto">
                                 <option selected>Todos...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1">Nombre del cliente</option>
+                                <option value="2">CI</option>
+                                <option value="3">Nro. orden</option>
+                                <option value="3">Nro. Transacción</option>
+                                <option value="3">Fecha de pago</option>
                                 </select>
                             </form>
                         </div>

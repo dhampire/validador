@@ -214,9 +214,14 @@ select {
   color: var(--blue);
   line-height: 1; }
 
+.card-footer {
+  background: white; }
+
 .card--contenedor {
   padding: 40px 20px !important; }
   .card--contenedor form {
+    font-size: 0.85rem; }
+  .card--contenedor .btn {
     font-size: 0.85rem; }
 
 .custom-select, .form-control {
@@ -229,7 +234,7 @@ select {
 @media (max-width: 768px) {
   .validador--movil {
     display: block; }
-  .validador--pc {
+  .validador--pc, .validador--title {
     display: none; } }
 
 table tbody {

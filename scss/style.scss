@@ -107,6 +107,7 @@ select {
     color: var(--blue);
 }
 
+
 .card--title{
     font-size: 1.35rem; 
 }
@@ -118,11 +119,16 @@ select {
     color: var(--blue);
     line-height: 1;
 }
-
+.card-footer{
+    background: white;
+}
 .card--contenedor{
     padding: 40px 20px !important;
 
     form {
+        font-size: 0.85rem;
+    }
+    .btn{
         font-size: 0.85rem;
     }
 }
@@ -139,7 +145,7 @@ select {
         &--movil{
             display: block;
         }
-        &--pc{
+        &--pc, &--title{
             display: none;
         }
     }

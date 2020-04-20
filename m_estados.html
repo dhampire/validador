@@ -42,12 +42,12 @@
             <i class="fas fa-clipboard mr-3"></i>
               <span class="text">Reportes</span>
             </a>
-            <ul class="collapse list-unstyled" id="Reportes">
+            <ul class="collapse list-unstyled show" id="Reportes">
               <li>
                 <a href="m_vale.html" class="text-light">Resumen de ventas por vales</a>
               </li>
               <li>
-                <a href="m_estados.html" class="text-light"
+                <a href="m_estados.html"
                   >Movimiento de vales por estado</a
                 >
               </li>
@@ -72,7 +72,7 @@
 
       <!-- Page Content  -->
       <div class="container-fluid p-0 content__data" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top" style="height: 60px;">
           <div class="container-fluid p-0">
             <div class="col-6 d-flex justify-content-start align-items-center">
               <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center pl-0">
@@ -86,7 +86,7 @@
                 <i class="far fa-bell notifications_none"></i>
                 <a href="login.html" class="d-flex align-items-center">
                   <span class="px-3 userName">Nombre de usuario</span>
-                  <i class="far fa-user"></i>
+                  <i class="fas fa-sign-out-alt"></i>
                 </a>
                </div>
               </div>
@@ -113,7 +113,7 @@
                         <h3 class="data_encontrada">Datos Encontrados</h3>
 
                         <div class="row pt-3">
-                            <div class="col-3">
+                            <div class="col-3" style="padding-right: 30px;">
                                 <p class="row p_data">
                                     <span class="col-6">Total usados: </span>
                                     <span class="col-6 text-right">22</span></p>
@@ -121,13 +121,13 @@
                                         <span class="col-8">Total no usados: </span>
                                         <span class="col-4 text-right">22</span></p>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3" style="padding-right: 30px;">
                                 <p class="row p_data">
-                                    <span class="col-6">Total Expirados: </span>
-                                    <span class="col-6 text-right">22</span></p>
+                                    <span class="col-9">Total expirados: </span>
+                                    <span class="col-3 text-right">22</span></p>
                                     <p class="row p_data">
-                                        <span class="col-6">Total anulados: </span>
-                                        <span class="col-6 text-right">22</span></p>
+                                        <span class="col-9">Total anulados: </span>
+                                        <span class="col-3 text-right">22</span></p>
                             </div>
                             <div class="col-6 d-flex justify-content-end align-items-center">
                                 <a href="#" class="btn btn-success">Descargar <i class="fas fa-file-excel"></i></a>
@@ -138,12 +138,12 @@
                               <table class="table">
                               <thead>
                               <tr class="table--titulos">
-                                  <th scope="col">Nro</th>
-                                  <th scope="col">Monto del vale</th>
-                                  <th scope="col">Usados</th>
-                                  <th scope="col">No usados</th>
-                                  <th scope="col">Anulados</th>
-                                  <th scope="col">Expirados</th>
+                                  <th scope="col" class="text-center">Nro</th>
+                                  <th scope="col" >Monto del vale</th>
+                                  <th scope="col" class="text-center">Usados</th>
+                                  <th scope="col" class="text-center">No usados</th>
+                                  <th scope="col" class="text-center">Anulados</th>
+                                  <th scope="col" class="text-center">Expirados</th>
                               </tr>
                               </thead>
                               <tbody>

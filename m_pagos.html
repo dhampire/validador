@@ -38,13 +38,14 @@
               href="#Reportes"
               data-toggle="collapse"
               aria-expanded="false"
+              data-parent="#sidebar"
               class="dropdown-toggle text-light"
             >
             <i class="fas fa-clipboard mr-3"></i>
               <span class="text">Reportes</span>
             </a>
-            <ul class="collapse list-unstyled" id="Reportes">
-              <li>
+            <ul class="collapse list-unstyled show" id="Reportes">
+              <li class="">
                 <a href="m_vale.html" class="text-light">Resumen de ventas por vales</a>
               </li>
               <li>
@@ -53,7 +54,7 @@
                 >
               </li>
               <li>
-                <a href="m_pagos.html" class="text-light"
+                <a href="m_pagos.html"
                   >Movimiento de vales por canales de pago</a
                 >
               </li>
@@ -73,7 +74,7 @@
 
       <!-- Page Content  -->
       <div class="container-fluid p-0 content__data" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top" style="height: 60px;">
           <div class="container-fluid p-0">
             <div class="col-6 d-flex justify-content-start align-items-center">
               <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center pl-0">
@@ -87,7 +88,7 @@
                 <i class="far fa-bell notifications_none"></i>
                 <a href="login.html" class="d-flex align-items-center">
                   <span class="px-3 userName">Nombre de usuario</span>
-                  <i class="far fa-user"></i>
+                  <i class="fas fa-sign-out-alt"></i>
                 </a>
                </div>
               </div>
@@ -96,7 +97,7 @@
         </nav>
         <div class="container-fluid mt-3">
           <div class="col-lg-12">
-            <h2 class="font-weight-bold card--title">Movimientos de vales por canales de pago</h2>
+            <h2 class="font-weight-bold card--title">Movimiento de vales por canales de pago</h2>
             <div class="card shadow-sm mt-4">
               <div class="card-body card--contenedor">
                 <div class="col-12">
@@ -139,49 +140,49 @@
                         <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>0</td>
+                            <td >Vale de Bs. 50 (Equivale a Bs. 60)</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">0</td>
                         </tr>
                         <tr>
                             <th scope="row">1</th>
                             <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>0</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">0</td>
                         </tr>                            <tr>
                             <th scope="row">1</th>
                             <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>0</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">0</td>
                         </tr>                            <tr>
                             <th scope="row">1</th>
                             <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>0</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">0</td>
                         </tr>
                         
                         <tr>
                             <th scope="row">1</th>
                             <td>Vale de Bs. 50 (Equivale a Bs. 60)</td>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>0</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">0</td>
                         </tr>
                         <tr class="table--titulos" style="font-size: 1rem !important; font-weight: bold;">
                             <th scope="row" colspan="2">TOTALES</th>
-                            <td>8</td>
-                            <td>1</td>
-                            <td>7</td>
-                            <td>0</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center">0</td>
                         </tr>
   
                         </tbody>

@@ -43,7 +43,7 @@
             <i class="fas fa-clipboard mr-3"></i>
               <span class="text">Reportes</span>
             </a>
-            <ul class="collapse list-unstyled" id="Reportes">
+            <ul class="collapse list-unstyled show" id="Reportes">
               <li>
                 <a href="m_vale.html" class="text-light">Resumen de ventas por vales</a>
               </li>
@@ -58,7 +58,7 @@
                 >
               </li>
               <li>
-                <a class="" href="ventas.html" class="text-light">Ventas realizadas</a>
+                <a class="" href="ventas.html" >Ventas realizadas</a>
               </li>
             </ul>
           </li>
@@ -73,7 +73,7 @@
 
       <!-- Page Content  -->
       <div class="container-fluid p-0 content__data" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light top__header sticky-top" style="height: 60px;">
           <div class="container-fluid p-0">
             <div class="col-6 d-flex justify-content-start align-items-center">
               <button type="button" id="sidebarCollapse" class="btn d-flex justify-content-center pl-0">
@@ -86,8 +86,8 @@
                <div class="row">
                 <i class="far fa-bell notifications_none"></i>
                 <a href="login.html" class="d-flex align-items-center">
-                  <span class="px-3" style="font-size: 0.85rem;">Nombre de usuario</span>
-                  <i class="far fa-user"></i>
+                  <span class="px-3 userName">Nombre de usuario</span>
+                  <i class="fas fa-sign-out-alt"></i>
                 </a>
                </div>
               </div>
@@ -155,7 +155,7 @@
 
                         <div class="col-4">
                           <div class="row">
-                            <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Fecha desde:</p></div>
+                            <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Fecha hasta:</p></div>
                               <div class="col-7 pl-0 d-flex align-items-center">
                                <input class="form-control" type="date" id="hastaFecha" name="hastaFecha" />
                                 <label for="hastaFecha" class="pl-2">
@@ -175,8 +175,8 @@
                   <div class="row pt-3">
                       <div class="col-4">
                           <p class="row p_data">
-                              <span class="col-8">Cantidad total de vales: </span>
-                              <span class="col-4 text-right">22</span>
+                              <span class="col-9">Cantidad total de vales: </span>
+                              <span class="col-3 text-right">22</span>
                           </p>
                           <p class="row p_data">
                             <span class="col-8">Monto total Bs.: </span>
@@ -184,7 +184,7 @@
                         </p>
                       </div>
                       <div class="col-8 d-flex justify-content-end align-items-center">
-                        <a href="#" class="btn btn-success">Descarga <i class="fas fa-file-excel"></i></a>
+                        <a href="#" class="btn btn-success">Descargar <i class="fas fa-file-excel"></i></a>
                       </div>
                   </div>
                   <div class="card tabla__resultados">
@@ -192,14 +192,14 @@
                         <table class="table">
                         <thead>
                         <tr class="table--titulos">
-                            <th scope="col">Nros</th>
-                            <th scope="col">Nro Orden</th>
+                            <th scope="col">Nros.</th>
+                            <th scope="col">Nro. Orden</th>
                             <th scope="col">Nombre del Cliente</th>
                             <th scope="col">CI</th>
-                            <th scope="col">Nro Celular</th>
+                            <th scope="col">Nro. Celular</th>
                             <th scope="col">Correo electrónico</th>
                             <th scope="col">Monto (Bs)</th>
-                            <th scope="col">Nro Transaccion</th>
+                            <th scope="col">Nro. Transaccion</th>
                             <th scope="col">Fecha del pago</th>
                             <th scope="col">Canal de pago</th>
                             <th scope="col">Estado del pago</th>
