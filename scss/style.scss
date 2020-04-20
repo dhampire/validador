@@ -31,6 +31,7 @@ body{
     }
     
     .user{
+        font-size: 0.85rem;
         i {
             background: var(--lightblue);
             text-align: center;
@@ -42,6 +43,12 @@ body{
         .notifications_none{
             background: none;
             color: white;
+        }
+
+        @media (max-width: 768px) {
+            span {
+                display: none;
+            }
         }
     }
 }

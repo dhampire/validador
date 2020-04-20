@@ -34,7 +34,6 @@
       #sidebar.active ul li a i {
         margin-right: 0;
         display: block;
-        font-size: 1.8em;
         margin-bottom: 5px; }
     #sidebar.active ul ul a {
       padding: 10px !important; }
@@ -42,6 +41,7 @@
       top: auto;
       bottom: 10px;
       right: 50%;
+      margin-right: 0.5rem;
       -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
       transform: translateX(50%); }
@@ -140,16 +140,21 @@ body {
   .top__header a {
     color: white;
     text-decoration: none; }
-  .top__header .user i {
-    background: var(--lightblue);
-    text-align: center;
-    padding: 8px 0;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%; }
-  .top__header .user .notifications_none {
-    background: none;
-    color: white; }
+  .top__header .user {
+    font-size: 0.85rem; }
+    .top__header .user i {
+      background: var(--lightblue);
+      text-align: center;
+      padding: 8px 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%; }
+    .top__header .user .notifications_none {
+      background: none;
+      color: white; }
+    @media (max-width: 768px) {
+      .top__header .user span {
+        display: none; } }
 
 .content__data {
   background-color: var(--lightgray); }
