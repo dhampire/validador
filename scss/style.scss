@@ -161,3 +161,7 @@ table tbody{
 .table{
     margin: 0;
 }
+
+.btn:focus, .btn.focus{
+    box-shadow: none;
+}

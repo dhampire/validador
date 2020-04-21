@@ -144,21 +144,50 @@
                         <div class="col-4">
                             <form action="" class="form-inline">
                                 <label class="col-5 p-0" for="monto">Busqueda por: </label>
-                                <select class="custom-select col-7" id="monto">
-                                <option selected>Todos...</option>
+                                <select id="formSearch"class="custom-select col-7" id="monto">
                                 <option value="1">Nombre del cliente</option>
                                 <option value="2">CI</option>
                                 <option value="3">Nro. orden</option>
                                 <option value="3">Nro. Transacción</option>
-                                <option value="3">Fecha de pago</option>
+                                <option value="dateSearch">Fecha de pago</option>
                                 </select>
                             </form>
                         </div>
                         <div class="col-8">
-                            <div class="form-group has-search">
+                            <div class="form-group has-search" id="searchForm">
                                 <span class="fas fa-search form-control-feedback"></span>
                                 <input type="text" class="form-control" placeholder="Buscar">
                               </div>
+
+                              <div class="row mt-3 mb-4" id="searchDate">
+                                <div class="col-4">
+                                  <div class="row">
+                                    <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Fecha desde:</p></div>
+                                      <div class="col-7 pl-0 d-flex align-items-center">
+                                       <input class="form-control" type="date" id="desdeFecha" name="desdeFecha" />
+                                        <label for="desdeFecha" class="pl-2">
+                                          <span class="fa fa-calendar-alt"></span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-4">
+                                  <div class="row">
+                                    <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Fecha hasta:</p></div>
+                                      <div class="col-7 pl-0 d-flex align-items-center">
+                                       <input class="form-control" type="date" id="hastaFecha" name="hastaFecha" />
+                                        <label for="hastaFecha" class="pl-2">
+                                          <span class="fa fa-calendar-alt"></span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-2">
+                          <button class="btn btn-primary" type="submit">Buscar</button>
                         </div>
                     </div>
                     <!-- table -->
@@ -278,6 +307,17 @@
     <script src="./js/popper.min.js"></script>
 
     <script>
+      document.getElementById('formSearch').addEventListener('change', function (e) {
+        if(e.target.value != "dateSearch"){
+          document.getElementById('searchDate').style.display = 'none'
+        }
+        else {
+          document.getElementById('searchForm').style.display ='none';
+          document.getElementById('searchDate').style.display = 'block'
+        }
+      })
+
+
       $(document).ready(function () {
         $("#sidebarCollapse").on("click", function () {
           $("#sidebar").toggleClass("active");
