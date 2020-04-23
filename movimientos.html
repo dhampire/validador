@@ -14,10 +14,10 @@
       <!-- Sidebar  -->
       <nav id="sidebar" class="vh-100 sticky-top">
         <div class="sidebar-header p-2">
-          <h3>
+          <h3 class="text-center">
             <img class="img-fluid" src="./img/logo_m-oferta_menu.png" alt="" />
           </h3>
-          <strong>VM</strong>
+          <strong><img class="w-75" src="./img/isologo.png" alt=""></strong>
         </div>
 
         <ul class="list-unstyled pt-5">
@@ -84,7 +84,6 @@
             <div class="col-6 d-flex justify-content-end align-items-center">
               <div class="user d-inline-block">
                <div class="row">
-                <i class="far fa-bell notifications_none"></i>
                 <a href="login.html" class="d-flex align-items-center">
                   <span class="px-3 userName">Nombre de usuario</span>
                   <i class="fas fa-sign-out-alt"></i>
@@ -103,7 +102,7 @@
                     <div class="row">
                         <div class="col-4">
                             <form action="" class="form-inline">
-                                <label class="col-5 p-0" for="monto">Monto del vale </label>
+                                <label class="col-5 p-0" for="monto">Monto del vale:</label>
                                 <select class="custom-select col-7" id="monto">
                                 <option selected>Todos...</option>
                                 <option value="1">One</option>
@@ -117,7 +116,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <form action="" class="form-inline">
-                                        <label class="col-5 p-0" for="monto">Canal de pagos</label>
+                                        <label class="col-5 p-0" for="monto">Canal de pagos: </label>
                                         <select class="custom-select col-7" id="monto">
                                         <option selected>Todos...</option>
                                         <option value="1">One</option>
@@ -128,7 +127,7 @@
                                 </div>
                                 <div class="col-6">
                                     <form action="" class="form-inline">
-                                        <label class="col-5 p-0" for="monto">Estado del pago</label>
+                                        <label class="col-5 p-0" for="monto">Estado del pago: </label>
                                         <select class="custom-select col-7" id="monto">
                                         <option selected>Todos...</option>
                                         <option value="1">One</option>
@@ -175,8 +174,8 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                              <div class="row">
-                                <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Hasta desde:</p></div>
+                              <div class="row mb-3">
+                                <div class="col-5" style="color: var(--blue);"><p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">Hasta fecha:</p></div>
                                   <div class="col-7 pl-0 d-flex align-items-center">
                                    <input class="form-control" type="date" id="desdeFecha" name="desdeFecha" />
                                     <label for="desdeFecha" class="pl-2">
@@ -198,14 +197,14 @@
                             <table class="table">
                             <thead>
                             <tr class="table--titulos">
-                                <th scope="col">Nro</th>
-                                <th scope="col">Nro Orden</th>
+                                <th scope="col">Nro.</th>
+                                <th scope="col">Nro. Orden</th>
                                 <th scope="col">Nombre del Cliente</th>
                                 <th scope="col">CI</th>
-                                <th scope="col">Nro Celular</th>
+                                <th scope="col">Nro. Celular</th>
                                 <th scope="col">Correo electrónico</th>
                                 <th scope="col">Monto (Bs)</th>
-                                <th scope="col">Nro Transaccion</th>
+                                <th scope="col">Nro. Transaccion</th>
                                 <th scope="col">Fecha del pago</th>
                                 <th scope="col">Canal de pago</th>
                                 <th scope="col">Estado del pago</th>

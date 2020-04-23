@@ -2,7 +2,7 @@
     --lightblue: #138FF1;
     --blue: #174A84;
     --darkblue: #001E4B; 
-    --black: #2D323E;
+    --black: #2D323E; 
     --lightgray: #F1F3F9;
 }
 @import "colors";
@@ -164,4 +164,8 @@ table tbody{
 
 .btn:focus, .btn.focus{
     box-shadow: none;
+}
+
+.card-footer{
+    border: none;
 }
